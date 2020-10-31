@@ -2,7 +2,7 @@
 
 date_default_timezone_set('Asia/Jakarta');
 os.system('clear');
-include "fcgomart.php";
+include "fcpergimart.php";
 ulang:
 // function change(){
 echo color("purple","              Klaim Pocer Pergi Mart                  \n");
