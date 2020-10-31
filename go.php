@@ -55,7 +55,15 @@ echo color("blue","             Format Nomor Pake 62                   \n");
 }
 echo "\n";
 echo "\n";
+$frdy = new frdy();
+echo "NOMOR     : ";
+$phoneNumber = trim(fgets(STDIN));
+$getOTPToken = $frdy->loginRequest($phoneNumber);
+$json = json_decode($getOTPToken, true);
+$OTPToken = $json['data']['otp_token'];
+echo "OTP        : ";
 
+echo "\n";
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
          echo "\n".color("nevy"," Sedang Mengganti Lokasi     ");
