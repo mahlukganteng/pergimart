@@ -8,7 +8,7 @@ ulang:
 echo color("purple","              Klaim Pocer Pergi Mart                  \n");
 echo color("red","                       MAZ Java                     \n");
 echo color("nevy","        Waktu  : ".date('[d-m-Y] [H:i:s]')."                        \n");
-echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \n");
+echo color("blue","             Format Nomor Pake 62                   \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("green","Masukkan Nomor : ");
@@ -55,20 +55,7 @@ echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \
 }
 echo "\n";
 echo "\n";
-$frdy = new frdy();
-echo "NOMOR     : ";
-$phoneNumber = trim(fgets(STDIN));
-$getOTPToken = $frdy->loginRequest($phoneNumber);
-$json = json_decode($getOTPToken, true);
-$OTPToken = $json['data']['otp_token'];
-echo "OTP        : ";
-$otpCode = trim(fgets(STDIN));
-echo "OTP TOKEN : ";
-echo $OTPToken;
-$getAccesstoken = $frdy->getAuthToken($OTPToken, $otpCode);
-$json = json_decode($getAccesstoken, true);
-$accesstoken = $json['access_token'];
-echo "\n";
+
 echo color("yellow","=====!=======!!========!!!=====!!!======\n");
          
          echo "\n".color("nevy"," Sedang Mengganti Lokasi     ");
