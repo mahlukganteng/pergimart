@@ -6,7 +6,7 @@ include "fcpergimart.php";
 ulang:
 // function change(){
 echo color("purple","              Klaim Pocer Pergi Mart                  \n");
-echo color("red","                MAZ Java                     \n");
+echo color("red","                       MAZ Java                     \n");
 echo color("nevy","        Waktu  : ".date('[d-m-Y] [H:i:s]')."                        \n");
 echo color("blue","        Format Nomor 08/62 Pake Salah Satu                  \n");
         $nama = nama();
